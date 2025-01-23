@@ -1,6 +1,6 @@
 # AnkiHub AutoProtect
 
-<!--**AnkiWeb Page: https://ankiweb.net/shared/info/{ADD HERE}**-->
+**AnkiWeb Page: https://ankiweb.net/shared/info/613201382**
 
 ![Screenshot of AnkiHub_Protect::Text tag in Anki](protect_text_tag.png)
 
