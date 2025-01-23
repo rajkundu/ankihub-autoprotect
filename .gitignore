@@ -1,0 +1,4 @@
+__pycache__/
+meta.json
+*.zip
+.DS_Store

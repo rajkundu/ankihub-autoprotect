@@ -1,0 +1,11 @@
+{
+    "name": "AnkiHub AutoProtect",
+    "version": "1.0",
+    "description": "Automatically protect modified notes (Text & Extra fields) from being overwritten by AnkiHub sync",
+    "author": "Raj Kundu",
+    "dependencies": {
+      "anki": "2.1.0"
+    },
+    "addonId": "ankihub_autoprotect",
+    "config": []
+  }
