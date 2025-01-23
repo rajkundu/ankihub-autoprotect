@@ -29,6 +29,9 @@ def on_card_modified(note: Note):
 
     focused_field_idx = editor.currentField
 
+    # The following code could be generalized with something like
+    # if focused_field_idx is not None:
+    #     tag = f"AnkiHub_Protect::{editor.note.keys()[focused_field_idx]}"
     tag = None
     if focused_field_idx == 0: # Text
         tag = "AnkiHub_Protect::Text"
