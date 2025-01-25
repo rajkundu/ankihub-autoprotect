@@ -60,7 +60,7 @@ def cache_objects_on_load(editor: Editor):
     if hasattr(mw.app.activeWindow(), "editor"):
         editor_cached = mw.app.activeWindow().editor
     else:
-        raise Exception("Failed to automatically add AnkiHub_Protect tags - editor window not found! Please try again.")
+        return
 
     note_fields_cached = deepcopy(editor_cached.note.fields)
 
