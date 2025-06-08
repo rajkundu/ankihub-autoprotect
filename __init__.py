@@ -50,7 +50,10 @@ def on_card_modified(note: Note):
 
     # Add the tag
     note.addTag(tag)
-    editor_cached._save_current_note()
+    
+    # Only force-save/update existing notes; new notes will be saved upon being added
+    if note.id != 0:
+        editor_cached._save_current_note()
 
     # derived from https://github.com/ankitects/anki/blob/64ca90934bc26ddf7125913abc9dd9de8cb30c2b/qt/aqt/editor.py#L592
     editor_cached.web.eval(f'require("anki/ui").loaded.then(() => {{ setTags({json.dumps(note.tags)}); }})')
